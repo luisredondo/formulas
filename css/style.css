@@ -1,0 +1,106 @@
+/* ---- VARIABLES ----  */
+:root {
+	--colorP: #2C2E3E;
+	--colorS: #34394C;
+	--colorT: #EE2B47; 
+    --colorC: aliceblue;  
+}
+/* ---- RESETEO SIMPLE ---- */
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+    border: none; 
+}
+/* ---- FUENTES ---- */ 
+@font-face {
+    font-family: "FuentePrincipal"; 
+    src: url("../fuentes/Wallpoet-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FuenteSecundaria"; 
+    src: url("../fuentes/OpenSans-Bold.ttf") format("truetype");
+}
+
+/* ---- PRINCIPAL ---- */
+body {
+    background-color: var(--colorP); 
+    font-size: 16px; 
+}
+
+.barra-lateral {
+	background-color: var(--colorP);
+	width: 100%;
+	position: absolute; 
+	height: 100%;  
+}
+
+.barra-lateral  h1 {
+    background: var(--colorT); 
+    color: #fff; 
+    padding: 10px; 
+    font-size: 1.6em; 
+    margin-bottom: 20px;
+    text-align: center; 
+    font-family: "FuentePrincipal"; 
+}
+
+.barra-lateral ul li h2 {
+    text-align: center; 
+	font-size: 1.12em; 
+	width: 100%; 
+	background-color: var(--colorS); 
+	color: #fff; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-family: "FuenteSecundaria"
+; }
+
+.barra-lateral ul li h2 {
+    border-bottom: 3px solid rgba(0,0,0,0)
+}
+
+.barra-lateral ul li h2:hover {
+    border-bottom: 3px solid gold;
+}
+
+.barra-lateral ul li h2:active {
+    border-bottom: 3px solid crimson;
+}
+
+/* ---- CONTENEDORES DE FORMULAS ---- */ 
+
+.contenedor-info {
+    width: 90%; 
+    background-color: var(--colorC); 
+    padding: 20px; 
+    margin: auto; 
+    border-radius: 5px;
+    margin-bottom: 10px; 
+    display: none;
+}
+
+.contenedor-info h3 {
+    color: #000; 
+    text-align: center;
+    font-family: "FuentePrincipal"; 
+    font-size: 1.5em; 
+}
+
+.contenedor-info img {
+    display: block;
+    margin: 10px auto;
+    width: 100px; 
+}
+
+.contenedor-info p {
+    width: 100%; 
+    background: #ccc; 
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+    
+}
+
